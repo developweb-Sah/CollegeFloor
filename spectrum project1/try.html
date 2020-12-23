@@ -1,0 +1,78 @@
+<!-- //     function display() {
+    //   document.getElementById("demo3").innerHTML=This is me;
+    // }
+        
+    //     function togglehide() {
+    //       let washroom= document.getElementsByClassName("washroom");
+    //       let Washroom = document.getElementById("Washroom");
+    //       if(washroom.style.visibility!='visibility'){
+    //         washroom.style.visibility ='visibility';
+    //       }
+    //       else{
+    //         washroom.style.display = 'none';
+    //       }
+    //     }
+        
+    // togglehide();
+    // function washroom(params) {
+        
+    // }
+    //     // // ADDING EVENT LISTENER
+    //     washroom.addEventListener('mouseover',function run() {
+    //         // alert('Mouse inside')
+    //         console.log("mouse inside")
+    //     });
+    //     washroom.addEventListener('mouseout',function run() {
+    //         // alert('Mouse outside')
+    //         console.log("mouse outside")
+    //     });
+    // if ( washroom.addEventListener='mouseover')
+    // {
+    //    let washroom= document.getElementById('washroom').innerHTML('up');
+    // }
+    // function display(text){
+    // document.getElementById('washroom');
+    // display.innerHTML="";
+    // display.innerHTML=text
+    // }
+    // function none(){
+    
+    // }
+    
+    // <div id="up"></div>This is girls washroom </div>
+    onmouseover="x()" onmouseout="y()"
+
+
+
+
+    washroom.addEventListener('mouseover',function x() {
+        //    var str= document.getElementById("washroom").innerHTML;
+        //    var res= str.replace("","f");
+        var str= document.getElementsById("washroom").innerHTML;
+        var res= str.replace("","f");
+        document.getElementsById("washroom").innerHTML = res;
+            alert('Mouse inside')
+            console.log("mouse inside")
+        }); -->
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <div id="phases">Saheen</div>
+            <p id="title1" onmouseover="changePhase(this)">PHASE 1</p>
+            <p id="title2" onmouseover="changePhase(this)">PHASE 2</p>
+            <p id="title3" onmouseover="changePhase(this)">PHASE 3</p>
+            <p id="title4" onmouseover="changePhase(this)">PHASE 4</p>
+            <script>
+                function changePhase(obj) {
+                    document.getElementById("phases").innerHTML="This is"+obj.innerHTML;
+                }
+            </script>
+        </body>
+        </html>

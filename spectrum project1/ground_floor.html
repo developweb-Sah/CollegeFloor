@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GROUND FLOOR</title>
+        <link rel="stylesheet" href="groundfloor.css">
+    </head>
+    <body>
+        <div class="notice"><h1 class="header">Display Board</h1>
+            <div id="display">
+        </div>
+        <div id="container"><span id="time"></span></div>
+    <div class="class1left" onmouseover="go1(this)" onmouseout="out()">Classroom</div>
+    <div class="class2left" onmouseover="go1(this)" onmouseout="out()">Classroom</div>
+    <div class="class3left" onmouseover="go1(this)" onmouseout="out()">Classroom</div>
+    <div class="stair1" onmouseover="go2(this)" onmouseout="out()">Stairs
+        <nav>
+            <button id="btn">First floor</button>
+             
+     <div id="myModal" class="modal">
+          
+       <div class="modal-content">
+         <span class="close">&times;</span>
+         <p><a class="link" href="first_floor.html">First floor</a></p>
+       </div>
+     </div>
+     </nav>
+    </div>
+    <div class="openspace1" onmouseover="go3(this)" onmouseout="out()">Open Space</div>
+    <div class="class1right" onmouseover="go1(this)" onmouseout="out()">Classroom</div>
+    <div class="class2right" onmouseover="go1(this)" onmouseout="out()">Classroom</div>
+    <div class="washroom" onmouseover="go4(this)" onmouseout="out()">Washroom</div>
+    <div class="openspace2" onmouseover="go3(this)" onmouseout="out()">Open Space</div>
+    <div class="principalroom" onmouseover="go5(this)" onmouseout="out()">Princial's Room</div>
+    <div class="hod" onmouseover="go6(this)" onmouseout="out()">HoD room</div>
+    <div class="stairs2" onmouseover="go2(this)" onmouseout="out()">Stairs
+        <nav>
+            <button id="btn1">First floor</button>
+             
+     <div id="myModal1" class="modal1">
+          
+       <div class="modal-content1">
+         <span class="close1">&times;</span>
+         <p><a class="link1" href="first_floor.html">First floor</a></p>
+       </div>
+     </div>
+     </nav>
+    </div>
+    
+    <div class="readingroom" onmouseover="go7(this)" onmouseout="out()">Reading Room</div>
+    <div class="library" onmouseover="go8(this)" onmouseout="out()">Library</div>
+
+</div>
+<script>
+    let now= new Date();
+    console.log(now)
+    setInterval(upDate, 1000);
+    function upDate() {
+        time.innerHTML= new Date();
+    }
+
+
+
+    function go1() {
+            document.getElementById("display").innerHTML="This is a classroom. "
+           }
+           function go2() {
+            document.getElementById("display").innerHTML="This is StairCase which connect us to the first floor. "
+           }
+           function go3() {
+            document.getElementById("display").innerHTML="This is a OpenSpace . Its a corridor And students are requested not to rom in the corridor rather they are requested to be in their respected classrooms. "
+           }
+           function go4() {
+            document.getElementById("display").innerHTML="This is Boy's Washroom and girls are strictly not allowed here. "
+           }
+           function go5() {
+            document.getElementById("display").innerHTML="This is Principal's Office students are requested to behave decently atleast here. Students are not allowed to visit the Office without permission of the HOD. "
+           }
+           function go6() {
+            document.getElementById("display").innerHTML="This is Head of Department of Instrumentation amd Electronic Branch. Students having any problem should come to the department. And without the permission of HOD students are not allowed to perform any activity in the college campus."
+           }
+           function go7() {
+            document.getElementById("display").innerHTML="This is reading room. Students are adviced to keep quiet in the reading room and maintain disipline. For girls reading room is open from 6am-6pm. And for boys its open 24/7. "
+           }
+           function go8() {
+            document.getElementById("display").innerHTML="This is a Library. Students can come and issue any book they want from the library. It is open from 10am-2:30pm in all the working days. You have to issue books by library card given to you."
+           }
+           function out(){
+    document.getElementById("display").innerHTML="This is College of engineering and technology bhubaneswar. Hope you are getting to learn something here ";
+}
+
+
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("btn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Get the modal
+var modal1 = document.getElementById("myModal1");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("btn1");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close1")[0];
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+    </body>
+</html>

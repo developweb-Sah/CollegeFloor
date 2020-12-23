@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            SECOND FLOOR
+        </title>
+        <link rel="stylesheet" href="second_floor.css">
+    </head>
+    <body>
+        <div class="notice"><h1 class="header">Display Board</h1>
+        
+    <div id="display">
+
+    </div>
+<div id="container"><span id="time"></span></div>
+        <div class="class1left" onmouseover="go1(this)" onmouseout="out()">Classroom</div>
+        <div class="class2left" onmouseover="go1(this)" onmouseout="out()">Classroom</div>
+        <div class="class3left" onmouseover="go1(this)" onmouseout="out()">Classroom</div>
+        <div class="stair1" onmouseover="go2(this)" onmouseout="out()">Stairs
+            <nav>
+                <button id="btn">First floor</button>
+                 
+         <div id="myModal" class="modal">
+              
+           <div class="modal-content">
+             <span class="close">&times;</span>
+             <p><a class="link" href="first_floor.html">First floor</a></p>
+           </div>
+         </div>
+         </nav>
+        </div>
+        <div class="washroom" onmouseover="go3(this)" onmouseout="out()">Washroom</div>
+        <div class="staffroom" onmouseover="go4(this)" onmouseout="out()">Staff Room</div>
+        <div class="class1right" onmouseover="go1(this)" onmouseout="out()">Classroom</div>
+        <div class="class2right" onmouseover="go1(this)" onmouseout="out()">Classroom</div>
+        <div class="class3right" onmouseover="go1(this)" onmouseout="out()">Classroom</div>
+        <div class="openspace" onmouseover="go5(this)" onmouseout="out()">Open Space</div>
+        <div class="cttc" onmouseover="go6(this)" onmouseout="out()">CTTC Room</div>
+        <div class="spectrum" onmouseover="go7(this)" onmouseout="out()">Spectrum</div>
+        <div class="stairs2" onmouseover="go2(this)" onmouseout="out()">Stairs
+            <nav>
+                <button id="btn1">First floor</button>
+         <div id="myModal1" class="modal1">
+              
+           <div class="modal-content1">
+             <span class="close1">&times;</span>
+             <p><a class="link1" href="first_floor.html">First floor</a></p>
+           </div>
+         </div>
+             </nav>
+        </div>
+        <div class="met" onmouseover="go8(this)" onmouseout="out()">Meeting Room</div>
+        <div class="lab" onmouseover="go9(this)" onmouseout="out()">Lab</div>
+        <script>
+            let now= new Date();
+            console.log(now)
+            setInterval(upDate, 1000);
+            function upDate() {
+                time.innerHTML= new Date();
+            }
+
+
+            function go1() {
+            document.getElementById("display").innerHTML="This is a classroom. "
+           }
+           function go2() {
+            document.getElementById("display").innerHTML="This is a Staircase which connects us to first foor. "
+           }
+           function go3() {
+            document.getElementById("display").innerHTML="This is Girl's Washroom and boys are strictly not allowed here. "
+           }
+           function go4() {
+            document.getElementById("display").innerHTML="This is Staffroom. Here teachers can sit and do their work. "
+           }
+           function go5() {
+            document.getElementById("display").innerHTML="This is a OpenSpace . Its a corridor And students are requested not to rom in the corridor rather they are requested to be in their respected classrooms. "
+           }
+           function go6() {
+            document.getElementById("display").innerHTML="This is CTTC classroom. Here we provide extra classes for students learning purpose. "
+           }
+           function go7() {
+            document.getElementById("display").innerHTML="This is one of the very famous and working club of CET. Here Students work innovate and make various projects. "
+           }
+           function go8() {
+            document.getElementById("display").innerHTML="This is Meeting room where we conduct different meeting based on any project etc. "
+           }
+           function go9() {
+            document.getElementById("display").innerHTML="This is IDS Lab. Don't Enter without your lab copy. And bring all the necessary item and don't borrow from others ."
+           }
+           function out(){
+    document.getElementById("display").innerHTML="This is College of engineering and technology bhubaneswar. Hope you are getting to learn something here ";
+}
+
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("btn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+// Get the modal
+var modal1 = document.getElementById("myModal1");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("btn1");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close1")[0];
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+
+
+
+
+
+
+
+
+
+        </script>
+        
+    </body>
+</html>
